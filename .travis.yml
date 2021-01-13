@@ -1,0 +1,9 @@
+sudo: required
+services:
+ - docker
+
+before_install:
+ - docker build -t ratika31/docker-newreact -f Dockerfile.dev .
+
+script:
+ - docker run ratika31/docker-newreact npm run test -- --coverage

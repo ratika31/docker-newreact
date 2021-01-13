@@ -6,4 +6,4 @@ before_install:
  - docker build -t ratika31/docker-newreact -f Dockerfile.dev .
 
 script:
- - docker run ratika31/docker-newreact npm run test -- --coverage
+ - docker run -e CI=true ratika31/docker-newreact npm run test -- --coverage

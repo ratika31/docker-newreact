@@ -12,10 +12,10 @@ script:
 deploy: 
  provider: elasticbeanstalk
  region: "eu-west-2"
- app: "docker-error"
- env: "DockerError-env"
+ app: "docker-react"
+ env: "DockerReact-env"
  bucket_name: "elasticbeanstalk-eu-west-2-217456606433"
- bucket_path: "docker-error"
+ bucket_path: "docker-react"
  on:
   branch: master
  access_key_id: $AWS_ACCESS_KEY
